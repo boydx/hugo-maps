@@ -1,0 +1,22 @@
+<head>
+    <title>{{ .Title }}</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Website meta description for google search results go here" />
+    <meta name="dc.relation" content="{{ .Site.BaseURL }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#1A94D2" />
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+    {{ $options := (dict "targetPath" "css/main.css" "outputStyle" "compressed") }}
+
+    {{ $style := resources.Get "sass/main.scss" | toCSS  $options | minify }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}" media="screen">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <link rel="stylesheet" href="/css/styles.css"/>
+
+
+</head>

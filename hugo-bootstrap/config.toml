@@ -1,8 +1,11 @@
-BaseURL = "https://www.mywebsite.com/"
+BaseURL = "https://newmapsplus.github.io/"
 languageCode = "en-us"
-title = "My Hugo Site"
-theme = "mytheme"
+title = "New Maps Plus templates"
+theme = "single"
 relativeURLS = true
+
+[markup.goldmark.renderer]
+unsafe= true
 
 [module]
 [[module.mounts]]

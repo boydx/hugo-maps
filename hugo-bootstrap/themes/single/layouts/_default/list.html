@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="container vh-100 bg-light">
+
+<section class="py-3 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">{{ .Title}} </h1>
+          <p class="lead text-muted">{{ .Content }}</p>
+        </div>
+      </div>
+</section>
+
+<div class="list-group">
+
+{{ range .Pages}}
+  <a href="{{.URL}}" class="list-group-item list-group-item-action" >
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{.Title}}</h5>
+    </div>
+    <p class="mb-1">{{.Params.desription}}</p>
+    <small>And some small print.</small>
+  </a>
+{{end}}
+</div>
+</div>
+
+{{ end }}

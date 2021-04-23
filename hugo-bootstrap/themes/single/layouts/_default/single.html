@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<div class="container-fluid bg-primary py-2" id='singleTitle'>
+    <row>
+       <h3 class="">{{ .Title}} {{ .Params.type }}</h3> 
+    </row>
+</div>
+
+    {{ .Content }}
+
+
+{{ end }}

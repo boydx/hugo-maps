@@ -1,0 +1,44 @@
+<nav class="navbar navbar-dark bg-dark" id='nav'>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="/images/nmp-white.svg" alt="" height="35px"
+        class="d-inline-block align-text-top">
+      New Maps Plus
+    </a>
+
+    <ul class="nav justify-content-end">
+    {{ range .Site.Menus.main.ByWeight}}
+      <!-- <li class="nav-item">
+              <a class="nav-link " href="{{.URL}}">{{.Title}}</a>
+            </li> -->
+      {{ $currentPage := . }}
+      {{ if .HasChildren }}
+              <li class="nav-item dropdown">
+                <a class='nav-link dropdown-toggle ' href="#"
+                  id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   {{ .Title }}
+                </a>
+             
+                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  {{ range .Children }}
+                    <li>
+                      <a class='dropdown-item ' href="{{ .URL }}">  {{ .Title }}</a>
+                    </li>
+                  {{ end }}
+                </ul> 
+              </li>
+          
+            {{ else }}
+            <li class="nav-item">
+              <a class='nav-link'
+                href="{{ .URL }}">
+                 {{ .Title }}
+              </a>
+            </li>
+            {{ end }}
+    {{end}}
+      
+
+    </ul>
+  </div>
+</nav>
