@@ -1,0 +1,10 @@
+BaseURL = "https://www.mywebsite.com/"
+languageCode = "en-us"
+title = "My Hugo Site"
+theme = "mytheme"
+relativeURLS = true
+
+[module]
+[[module.mounts]]
+    source = "../bootstrap/dist/js/bootstrap.bundle.min.js"
+    target = "assets/js/bootstrap.bundle.min.js"
