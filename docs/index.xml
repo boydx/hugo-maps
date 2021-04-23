@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>New Maps Plus templates</title>
+    <link>https://newmapsplus.github.io/</link>
+    <description>Recent content on New Maps Plus templates</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Apr 2021 12:00:41 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Map671</title>
+      <link>https://newmapsplus.github.io/courses/map671/</link>
+      <pubDate>Fri, 23 Apr 2021 12:00:41 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/courses/map671/</guid>
+      <description>MAP 671: Introduction to New Mapping NewMapsPlus.github.io
+Course Description This course introduces students to both the social and technical aspects of digital mapping in the 21st century. Students will learn fundamental concepts and techniques in cartography and GIS, including file types, spatial databases, data manipulation, projections and coordinate reference systems, and analytical and spatial analysis techniques in a range of desktop, server, and web-based mapping platforms. In addition to providing the fundamental technical competencies necessary to create maps, students will develop the critical awareness required to effectively communicate complex social processes through maps.</description>
+    </item>
+    
+    <item>
+      <title>Fullscreen</title>
+      <link>https://newmapsplus.github.io/examples/fullscreen/</link>
+      <pubDate>Fri, 23 Apr 2021 11:37:18 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/fullscreen/</guid>
+      <description> blah blah     </description>
+    </item>
+    
+    <item>
+      <title>Map</title>
+      <link>https://newmapsplus.github.io/map/</link>
+      <pubDate>Thu, 22 Apr 2021 13:55:22 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/map/</guid>
+      <description> </description>
+    </item>
+    
+    <item>
+      <title>A</title>
+      <link>https://newmapsplus.github.io/a/</link>
+      <pubDate>Thu, 22 Apr 2021 13:51:47 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/a/</guid>
+      <description>Hello World Alligators aer everywhere
+yes, it&amp;rsquo;s true </description>
+    </item>
+    
+  </channel>
+</rss>

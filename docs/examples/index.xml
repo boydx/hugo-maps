@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examples on New Maps Plus templates</title>
+    <link>https://newmapsplus.github.io/examples/</link>
+    <description>Recent content in Examples on New Maps Plus templates</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Apr 2021 11:43:08 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/examples/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fullscreen</title>
+      <link>https://newmapsplus.github.io/examples/fullscreen/</link>
+      <pubDate>Fri, 23 Apr 2021 11:37:18 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/fullscreen/</guid>
+      <description> blah blah     </description>
+    </item>
+    
+  </channel>
+</rss>
