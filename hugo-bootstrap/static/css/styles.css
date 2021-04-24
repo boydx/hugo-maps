@@ -27,6 +27,8 @@ body{
     }
   }
 
+/* Control map on different pages */
+
 #map {
 			background: #20282e;
       width: 100%;
@@ -34,4 +36,35 @@ body{
 
 #fullHeight #map {
   height: 100%;
+}
+
+/* Absolute positioning of elements above map */
+
+.nmp-absolute {
+  position: absolute;
+  z-index: 1010;
+}
+
+.nmp-relative {
+  position: relative;
+}
+
+.nmp-tl {
+  top: 12px;
+  left: 12px;
+}
+
+.nmp-bl {
+  bottom: 12px;
+  left: 12px;
+}
+
+.nmp-br {
+  bottom: 12px;
+  right: 12px;
+}
+
+.nmp-tr {
+  top: 12px;
+  right: 12px;
 }
