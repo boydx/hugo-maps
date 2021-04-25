@@ -97,7 +97,7 @@ function addModal(button, map) {
 function addData(map) {
 
     // Make the call to external data
-    fetch('/data/kentucky.geojson')
+    fetch('/images/spatial-data/kentucky.geojson')
         // When the server responds, let's evaluate the response
         .then(function (response) {
             // Look at the response
