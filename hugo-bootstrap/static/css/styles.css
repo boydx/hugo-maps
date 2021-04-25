@@ -38,6 +38,23 @@ body{
   height: 100%;
 }
 
+.scrollspy-example  {
+  position: relative;
+  /* height: 400px; */
+  height: 100%;
+  overflow: auto;
+}
+
+#contains-map #map {
+  height: 33vh;
+}
+
+#map-modal{
+  background: #20282e;
+  width: 100%;
+  height: 100%;
+}
+
 /* Absolute positioning of elements above map */
 
 .nmp-absolute {

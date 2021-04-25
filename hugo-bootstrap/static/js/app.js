@@ -7,11 +7,16 @@ window.addEventListener('resize', e => {
 })
 
 if (document.querySelector("#map")) { 
-    makeMap()
+    makeMap('map')
+}
+
+if (document.querySelector("#map-modal")) { 
+    makeMap('map-modal')
+    adjustHeight()
 }
 
 
-function makeMap() {
+function makeMap(id) {
 
     // initial Leaflet map options
     const options = {
@@ -21,7 +26,7 @@ function makeMap() {
     }
 
     // create Leaflet map and apply options
-    const map = L.map('map', options);
+    const map = L.map(id, options);
 
     // request a basemap tile layer and add to the map
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -43,6 +48,13 @@ function adjustHeight() {
         let size = window.innerHeight - height
         let mapSize = document.querySelector("#fullHeight")
         mapSize.style.height = `${size}px`
+        console.log(size)
+    }
+
+    if (document.querySelector(".scrollspy-example")) {
+        let size = window.innerHeight - height
+        let containerSize = document.querySelector(".scrollspy-example")
+        containerSize.style.height = `${size - 20}px`
         console.log(size)
     }
 }

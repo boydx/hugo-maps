@@ -1,0 +1,62 @@
+---
+title: "Scroll"
+date: 2021-04-25T07:54:54-04:00
+draft: false
+menu:
+  main:
+    identifier: "Scroll"
+    weight: 130 
+    parent: "examples"
+description: "a scrolling layout for New Maps Plus"
+---
+
+<section class="container-fluid nmp-lite-bg " id='fullHeight'>
+    <div class="row">
+    <div class="col-md-3 py-2 ">
+        <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+          </div>
+    </div>
+    <div class="col-md-9 py-2">
+
+        <div id='contains-map' data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example bg-light p-3 rounded-1" tabindex="0">
+            <h4 id="list-item-1">Welcome to an adventure in maps</h4>
+            <p>Coffee so sugar, saucer irish seasonal acerbic arabica bar  mazagran body blue mountain. Robust seasonal filter iced blue mountain cup irish. Saucer cinnamon plunger pot pumpkin spice, robusta cultivar, to go, decaffeinated grinder shop crema cortado. Fair trade, a café au lait, sit plunger pot macchiato medium organic chicory macchiato caramelization. White, et, est single origin, java aged turkish trifecta rich.</p>
+            <h4 id="list-item-2">Item 2</h4>
+            <p>Coffee so sugar, saucer irish seasonal acerbic arabica bar  mazagran body blue mountain. Robust seasonal filter iced blue mountain cup irish. Saucer cinnamon plunger pot pumpkin spice, robusta cultivar, to go, decaffeinated grinder shop crema cortado. Fair trade, a café au lait, sit plunger pot macchiato medium organic chicory macchiato caramelization. White, et, est single origin, java aged turkish trifecta rich.</p>
+            <div id="map" class='rounded-1'>
+                <button type="button" class="btn btn-primary text-light nmp-absolute nmp-bl" data-bs-toggle="modal" data-bs-target="#mapInfo" data-bs-whatever="map info">Enlarge</button>
+            </div>
+            <p>Coffee so sugar, saucer irish seasonal acerbic arabica bar  mazagran body blue mountain. Robust seasonal filter iced blue mountain cup irish. Saucer cinnamon plunger pot pumpkin spice, robusta cultivar, to go, decaffeinated grinder shop crema cortado. Fair trade, a café au lait, sit plunger pot macchiato medium organic chicory macchiato caramelization. White, et, est single origin, java aged turkish trifecta rich.</p>
+            <h4 id="list-item-3">Item 3</h4>
+            <p>Single shot, con panna barista chicory, caffeine mazagran ut cortado froth plunger pot con panna café au lait. French press dark trifecta beans grounds, café au lait seasonal café au lait ut filter beans. Instant iced irish whipped percolator breve white dark. Caramelization, extraction, foam frappuccino aromatic, seasonal mazagran fair trade milk blue mountain sugar. Aged acerbic carajillo, percolator robust irish variety cultivar.</p>
+            <h4 id="list-item-4">Item 4</h4>
+            <p>Americano, filter, body doppio, grinder black grounds, cream chicory grounds rich cream. Cultivar crema est, spoon breve seasonal lungo robust lungo. Et, caramelization flavour aromatic cappuccino milk, frappuccino ut iced decaffeinated grounds. Medium half and half instant, latte body pumpkin spice a robusta. Iced seasonal, flavour a con panna coffee dark americano a eu grounds.
+            </p><p>Americano, filter, body doppio, grinder black grounds, cream chicory grounds rich cream. Cultivar crema est, spoon breve seasonal lungo robust lungo. Et, caramelization flavour aromatic cappuccino milk, frappuccino ut iced decaffeinated grounds. Medium half and half instant, latte body pumpkin spice a robusta. Iced seasonal, flavour a con panna coffee dark americano a eu grounds.
+            </p>
+          </div>
+    </div>
+</div>
+
+<div class="modal" id="mapInfo" tabindex="-1" aria-labelledby="Map information" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="map-modal"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
