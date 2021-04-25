@@ -39,6 +39,14 @@ function adjustHeight() {
         containerSize.style.height = `${size - 20}px`
         console.log(size)
     }
+
+    if (document.querySelector("#two-column")) {
+        let size = window.innerHeight - height
+        let containerSize = document.querySelector("#two-column")
+        containerSize.style.height = `${size}px`
+        let mapSize = document.querySelector("#column-map")
+        mapSize.style.height = `${size - 20}px`
+    }
 }
 
 function makeMap(id) {
