@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-    <title>Fullscreen</title>
+    <title>Two Column</title>
     <meta charset="utf-8">
     <meta name="description"
         content="Website meta description for google search results go here" />
@@ -105,52 +105,47 @@
 
 <div class="container-fluid bg-primary py-2" id='singleTitle'>
     <row>
-       <h3 class="">Fullscreen </h3> 
+       <h3 class="">Two Column </h3> 
     </row>
 </div>
 
     
-
-<main>
-  <section class="container-fluid nmp-lite-bg" id='fullHeight'>
- 
-    <div class="row h-100">
-      
-        <!-- <div class="col-md-2">blah blah</div> -->
-        <div class="mx-0 px-0">
-          <div id='map' class='h-100 mx-0'>
-            <button id='map-modal-button' type="button" class="btn btn-primary text-light nmp-absolute nmp-bl" data-bs-toggle="modal" data-bs-target="#mapInfo" >Map Information</button>
-        </div>
-        </div>
+<section class="container-fluid nmp-lite-bg " id='fullHeight'>
+    <div class="row">
+    <div class="col-md-3 py-2">
+        <h4>Content</h4>
+        <p>Coffee so sugar, saucer irish seasonal acerbic arabica bar  mazagran body blue mountain. Robust seasonal filter iced blue mountain cup irish. Saucer cinnamon plunger pot pumpkin spice, robusta cultivar, to go, decaffeinated grinder shop crema cortado. Fair trade, a café au lait, sit plunger pot macchiato medium organic chicory macchiato caramelization. White, et, est single origin, java aged turkish trifecta rich.</p>
+        <p>Coffee so sugar, saucer irish seasonal acerbic arabica bar  mazagran body blue mountain. Robust seasonal filter iced blue mountain cup irish. Saucer cinnamon plunger pot pumpkin spice, robusta cultivar, to go, decaffeinated grinder shop crema cortado. Fair trade, a café au lait, sit plunger pot macchiato medium organic chicory macchiato caramelization. White, et, est single origin, java aged turkish trifecta rich.</p>
     </div>
-    </section>
-    
-    <div class="modal" id="mapInfo" tabindex="-1" aria-labelledby="Map information" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="col-md-9 py-2">
+
+        <div id='contains-map' data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example bg-light p-3 rounded-1" tabindex="0">
+            <div id="map" class='rounded-1'>
+                <button type="button" class="btn btn-primary text-light nmp-absolute nmp-bl" data-bs-toggle="modal" data-bs-target="#map-modal-content" data-bs-whatever="map info">Enlarge</button>
+            </div>
+            
           </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+    </div>
+</div>
+
+<div class="modal" id="map-modal-content" tabindex="-1" aria-labelledby="Map information" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div id="map-modal"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
-</main>
-
-
-
-
-
-
-
-
+</section>
 
 
 

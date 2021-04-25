@@ -8,12 +8,41 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Apr 2021 11:43:08 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Two Column</title>
+      <link>https://newmapsplus.github.io/examples/two-column/</link>
+      <pubDate>Sun, 25 Apr 2021 12:38:07 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/two-column/</guid>
+      <description>Content Coffee so sugar, saucer irish seasonal acerbic arabica bar mazagran body blue mountain. Robust seasonal filter iced blue mountain cup irish. Saucer cinnamon plunger pot pumpkin spice, robusta cultivar, to go, decaffeinated grinder shop crema cortado. Fair trade, a café au lait, sit plunger pot macchiato medium organic chicory macchiato caramelization. White, et, est single origin, java aged turkish trifecta rich.
+Coffee so sugar, saucer irish seasonal acerbic arabica bar mazagran body blue mountain.</description>
+    </item>
+    
+    <item>
+      <title>Scroll</title>
+      <link>https://newmapsplus.github.io/examples/scroll/</link>
+      <pubDate>Sun, 25 Apr 2021 07:54:54 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/scroll/</guid>
+      <description>Item 1 Item 2 Item 3 Item 4   Welcome to an adventure in maps Coffee so sugar, saucer irish seasonal acerbic arabica bar mazagran body blue mountain. Robust seasonal filter iced blue mountain cup irish. Saucer cinnamon plunger pot pumpkin spice, robusta cultivar, to go, decaffeinated grinder shop crema cortado. Fair trade, a café au lait, sit plunger pot macchiato medium organic chicory macchiato caramelization. White, et, est single origin, java aged turkish trifecta rich.</description>
+    </item>
+    
+    <item>
+      <title>Fullscreen Offcanvas</title>
+      <link>https://newmapsplus.github.io/examples/fullscreen-offcanvas/</link>
+      <pubDate>Sat, 24 Apr 2021 15:58:35 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/fullscreen-offcanvas/</guid>
+      <description> blah blah -- Map Information     Offcanvas right   ...   </description>
+    </item>
+    
+    <item>
       <title>Fullscreen</title>
       <link>https://newmapsplus.github.io/examples/fullscreen/</link>
       <pubDate>Fri, 23 Apr 2021 11:37:18 -0400</pubDate>
       
       <guid>https://newmapsplus.github.io/examples/fullscreen/</guid>
-      <description> blah blah     </description>
+      <description>  blah blah -- Map Information     Modal title   Modal body text goes here.
+ Close      </description>
     </item>
     
   </channel>
