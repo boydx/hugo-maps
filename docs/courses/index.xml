@@ -8,6 +8,24 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Apr 2021 11:58:46 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/courses/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Map673</title>
+      <link>https://newmapsplus.github.io/courses/map673/</link>
+      <pubDate>Wed, 28 Apr 2021 08:24:48 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/courses/map673/</guid>
+      <description>MAP 673-201: Programming for Web Mapping Course description MAP673 integrates the principles of geographic representation and web programming in order for students to develop high-quality interactive web maps. Students will design interactive web map projects that appropriately represent spatial data in order to serve end-user goals of map engagement and visual communication. The course will train students to compose interactive maps within the context of a coherent web page layout, including the development of supplementary content (such as text and metadata) to aid in visual storytelling.</description>
+    </item>
+    
+    <item>
+      <title>Map672</title>
+      <link>https://newmapsplus.github.io/courses/map672/</link>
+      <pubDate>Wed, 28 Apr 2021 08:24:39 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/courses/map672/</guid>
+      <description>MAP 672: Programming for Web Mapping Course Description This course introduces students to the fundamental concepts and techniques of web development and computer programming through web mapping. Students will become familiar with current web standards and proficient in manipulating the structural, stylistic and behavioral elements of web maps through programming. Students will translate these practices to achieve objectives in web cartography such as the display of a basemap, the thematic representation of data, and the employment of interaction to enhance visual communication and the presentation of information.</description>
+    </item>
+    
+    <item>
       <title>Hearts</title>
       <link>https://newmapsplus.github.io/courses/hearts/</link>
       <pubDate>Sat, 24 Apr 2021 00:47:28 -0400</pubDate>
