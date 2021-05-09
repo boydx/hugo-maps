@@ -66,7 +66,13 @@ function makeMap(id) {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     })
 
+    // request a basemap tile layer and add to the map
+    const ky = L.tileLayer('https://nyc3.digitaloceanspaces.com/astoria/tiles/ky-hillshade/{z}/{x}/{y}.jpg', {
+        attribution: '&copy;'
+    })
+
     tile.addTo(map);
+    ky.addTo(map);
 
     if (id == 'map-modal') {
         const myModalEl = document.getElementById('map-modal-content')
@@ -76,6 +82,10 @@ function makeMap(id) {
     }
 
     addData(map)
+
+    map.on('zoom', () => {
+        console.log(map.getZoom())
+    })
 
     // if (document.querySelector("#map-modal-button")) {
     //     addModal(document.querySelector("#map-modal-button"), map)
