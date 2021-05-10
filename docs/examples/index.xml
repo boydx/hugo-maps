@@ -8,6 +8,71 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 23 Apr 2021 11:43:08 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/examples/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>DEM &#43; Topo</title>
+      <link>https://newmapsplus.github.io/examples/hill-topo/</link>
+      <pubDate>Mon, 10 May 2021 16:09:09 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/hill-topo/</guid>
+      <description> Map Information     Map notes   This shaded relief map of Kentucky was created in the Blender 3D modeling application using data from The National Map, USGS. The shaded relief is below a slightly transparent layer showing topography from USGS.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>DEM &#43; Aerial</title>
+      <link>https://newmapsplus.github.io/examples/hill-img/</link>
+      <pubDate>Mon, 10 May 2021 16:02:07 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/hill-img/</guid>
+      <description> Map Information     Map notes   This shaded relief map of Kentucky was created in the Blender 3D modeling application using data from The National Map, USGS. The shaded relief is below a slightly transparent layer showing aerial photography from USGS.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>DSM with Labels</title>
+      <link>https://newmapsplus.github.io/examples/dsm-labels/</link>
+      <pubDate>Mon, 10 May 2021 15:56:01 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/dsm-labels/</guid>
+      <description> Map Information     Map notes   This digital surface model (DSM) shaded relief map of Lexington, Kentucky was created in the Blender 3D modeling application using lidar data from KyFromAbove.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>DSM Shaded Relief</title>
+      <link>https://newmapsplus.github.io/examples/dsm/</link>
+      <pubDate>Mon, 10 May 2021 15:51:11 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/dsm/</guid>
+      <description> Map Information     Map notes   This digital surface model (DSM) shaded relief map of Lexington, Kentucky was created in the Blender 3D modeling application using lidar data from KyFromAbove.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>Shaded Relief</title>
+      <link>https://newmapsplus.github.io/examples/hill/</link>
+      <pubDate>Mon, 10 May 2021 15:09:08 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/hill/</guid>
+      <description> Map Information     Map notes   This shaded relief map of Kentucky was created in the Blender 3D modeling application using data from The National Map, USGS.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
       <title>Two Column</title>
       <link>https://newmapsplus.github.io/examples/two-column/</link>
       <pubDate>Sun, 25 Apr 2021 12:38:07 -0400</pubDate>
@@ -26,22 +91,12 @@
     </item>
     
     <item>
-      <title>Fullscreen Offcanvas</title>
+      <title>Fullscreen</title>
       <link>https://newmapsplus.github.io/examples/fullscreen-offcanvas/</link>
       <pubDate>Sat, 24 Apr 2021 15:58:35 -0400</pubDate>
       
       <guid>https://newmapsplus.github.io/examples/fullscreen-offcanvas/</guid>
       <description> blah blah -- Map Information     Offcanvas right   ...   </description>
-    </item>
-    
-    <item>
-      <title>Fullscreen</title>
-      <link>https://newmapsplus.github.io/examples/fullscreen/</link>
-      <pubDate>Fri, 23 Apr 2021 11:37:18 -0400</pubDate>
-      
-      <guid>https://newmapsplus.github.io/examples/fullscreen/</guid>
-      <description>  blah blah -- Map Information     Modal title   Modal body text goes here.
- Close      </description>
     </item>
     
   </channel>

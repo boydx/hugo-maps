@@ -6,7 +6,72 @@
     <description>Recent content on New Maps Plus templates</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Apr 2021 08:24:48 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 May 2021 16:09:09 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DEM &#43; Topo</title>
+      <link>https://newmapsplus.github.io/examples/hill-topo/</link>
+      <pubDate>Mon, 10 May 2021 16:09:09 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/hill-topo/</guid>
+      <description> Map Information     Map notes   This shaded relief map of Kentucky was created in the Blender 3D modeling application using data from The National Map, USGS. The shaded relief is below a slightly transparent layer showing topography from USGS.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>DEM &#43; Aerial</title>
+      <link>https://newmapsplus.github.io/examples/hill-img/</link>
+      <pubDate>Mon, 10 May 2021 16:02:07 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/hill-img/</guid>
+      <description> Map Information     Map notes   This shaded relief map of Kentucky was created in the Blender 3D modeling application using data from The National Map, USGS. The shaded relief is below a slightly transparent layer showing aerial photography from USGS.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>DSM with Labels</title>
+      <link>https://newmapsplus.github.io/examples/dsm-labels/</link>
+      <pubDate>Mon, 10 May 2021 15:56:01 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/dsm-labels/</guid>
+      <description> Map Information     Map notes   This digital surface model (DSM) shaded relief map of Lexington, Kentucky was created in the Blender 3D modeling application using lidar data from KyFromAbove.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>DSM Shaded Relief</title>
+      <link>https://newmapsplus.github.io/examples/dsm/</link>
+      <pubDate>Mon, 10 May 2021 15:51:11 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/dsm/</guid>
+      <description> Map Information     Map notes   This digital surface model (DSM) shaded relief map of Lexington, Kentucky was created in the Blender 3D modeling application using lidar data from KyFromAbove.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
+    <item>
+      <title>Shaded Relief</title>
+      <link>https://newmapsplus.github.io/examples/hill/</link>
+      <pubDate>Mon, 10 May 2021 15:09:08 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/hill/</guid>
+      <description> Map Information     Map notes   This shaded relief map of Kentucky was created in the Blender 3D modeling application using data from The National Map, USGS.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky    </description>
+    </item>
+    
     <item>
       <title>Map673</title>
       <link>https://newmapsplus.github.io/courses/map673/</link>
@@ -44,7 +109,7 @@
     </item>
     
     <item>
-      <title>Fullscreen Offcanvas</title>
+      <title>Fullscreen</title>
       <link>https://newmapsplus.github.io/examples/fullscreen-offcanvas/</link>
       <pubDate>Sat, 24 Apr 2021 15:58:35 -0400</pubDate>
       
@@ -69,35 +134,6 @@
       <guid>https://newmapsplus.github.io/courses/map671/</guid>
       <description>MAP 671: Introduction to New Mapping NewMapsPlus.github.io
 Course Description This course introduces students to both the social and technical aspects of digital mapping in the 21st century. Students will learn fundamental concepts and techniques in cartography and GIS, including file types, spatial databases, data manipulation, projections and coordinate reference systems, and analytical and spatial analysis techniques in a range of desktop, server, and web-based mapping platforms. In addition to providing the fundamental technical competencies necessary to create maps, students will develop the critical awareness required to effectively communicate complex social processes through maps.</description>
-    </item>
-    
-    <item>
-      <title>Fullscreen</title>
-      <link>https://newmapsplus.github.io/examples/fullscreen/</link>
-      <pubDate>Fri, 23 Apr 2021 11:37:18 -0400</pubDate>
-      
-      <guid>https://newmapsplus.github.io/examples/fullscreen/</guid>
-      <description>  blah blah -- Map Information     Modal title   Modal body text goes here.
- Close      </description>
-    </item>
-    
-    <item>
-      <title>Map</title>
-      <link>https://newmapsplus.github.io/map/</link>
-      <pubDate>Thu, 22 Apr 2021 13:55:22 -0400</pubDate>
-      
-      <guid>https://newmapsplus.github.io/map/</guid>
-      <description> </description>
-    </item>
-    
-    <item>
-      <title>A</title>
-      <link>https://newmapsplus.github.io/a/</link>
-      <pubDate>Thu, 22 Apr 2021 13:51:47 -0400</pubDate>
-      
-      <guid>https://newmapsplus.github.io/a/</guid>
-      <description>Hello World Alligators aer everywhere
-yes, it&amp;rsquo;s true </description>
     </item>
     
   </channel>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html><head>
-    <title>Fullscreen Offcanvas</title>
+    <title>Fullscreen</title>
     <meta charset="utf-8">
     <meta name="description"
         content="Website meta description for google search results go here" />
@@ -74,11 +74,27 @@
                  <ul class="dropdown-menu .dropdown-menu-end " aria-labelledby="navbarDropdownMenuLink">
                   
                     <li>
-                      <a class='dropdown-item ' href="../../examples/fullscreen/">  Fullscreen</a>
+                      <a class='dropdown-item ' href="../../examples/hill/">  Shaded Relief</a>
                     </li>
                   
                     <li>
-                      <a class='dropdown-item ' href="../../examples/fullscreen-offcanvas/">  Fullscreen Offcanvas</a>
+                      <a class='dropdown-item ' href="../../examples/dsm/">  DSM Shaded Relief</a>
+                    </li>
+                  
+                    <li>
+                      <a class='dropdown-item ' href="../../examples/dsm-labels/">  DSM with Labels</a>
+                    </li>
+                  
+                    <li>
+                      <a class='dropdown-item ' href="../../examples/hill-img/">  DEM &#43; Aerial</a>
+                    </li>
+                  
+                    <li>
+                      <a class='dropdown-item ' href="../../examples/hill-topo/">  DEM &#43; Topo</a>
+                    </li>
+                  
+                    <li>
+                      <a class='dropdown-item ' href="../../examples/fullscreen-offcanvas/">  Fullscreen</a>
                     </li>
                   
                     <li>
@@ -113,7 +129,7 @@
 
 <div class="container-fluid bg-primary py-2" id='singleTitle'>
     <row>
-       <h3 class="">Fullscreen Offcanvas </h3> 
+       <h3 class="">Fullscreen </h3> 
     </row>
 </div>
 
@@ -123,14 +139,14 @@
 <div class="row h-100">
     <!-- <div class="col-md-2">blah blah</div> -->
     <div class="mx-0 px-0">
-      <div id='map' class='mx-0'>
-      <button type="button" class="btn btn-primary text-light nmp-absolute nmp-bl" data-bs-toggle="offcanvas" data-bs-target="#mapInfo" aria-controls="offcanvasRight">Map Information</button>
+      <div id='map' class='map mx-0'>
+      <button type="button" class="btn btn-primary text-light nmp-absolute nmp-tr" data-bs-toggle="offcanvas" data-bs-target="#mapInfo" aria-controls="offcanvasRight">Map Information</button>
     </div>
     </div>
 </div>
 </section>
 
-<div class="offcanvas offcanvas-bottom" tabindex="-1" id="mapInfo" aria-labelledby="offcanvasBottomLabel">
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mapInfo">
   <div class="offcanvas-header">
     <h5 id="offcanvasRightLabel">Offcanvas right</h5>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -158,6 +174,6 @@
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
   crossorigin=""></script>
-  <script src="../../js/app.js"></script>
+  <script src="../../js/elev.js"></script>
 </footer></body>
 </html>
