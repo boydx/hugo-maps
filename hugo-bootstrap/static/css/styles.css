@@ -29,12 +29,16 @@ body{
 
 /* Control map on different pages */
 
-#map {
-			background: #20282e;
+#map, .map {
+			background: #fff;
       width: 100%;
 		}
 
 #fullHeight #map {
+  height: 100%;
+}
+
+#fullHeight .map {
   height: 100%;
 }
 
@@ -62,7 +66,7 @@ body{
 
 .nmp-absolute {
   position: absolute;
-  z-index: 1010;
+  z-index: 900;
 }
 
 .nmp-relative {
