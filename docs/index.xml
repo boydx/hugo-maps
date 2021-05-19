@@ -6,7 +6,33 @@
     <description>Recent content on New Maps Plus templates</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 May 2021 16:09:09 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 May 2021 11:05:44 -0400</lastBuildDate><atom:link href="https://newmapsplus.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RRG &#43; Topo</title>
+      <link>https://newmapsplus.github.io/examples/rrg-topo/</link>
+      <pubDate>Wed, 19 May 2021 11:05:44 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/rrg-topo/</guid>
+      <description> Map Information     Map notes   This digital elevation model (DEM) shaded relief map of Powell, Wolfe, and Menifee counties, Kentucky was created in the Blender 3D modeling application using lidar data from KyFromAbove.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky   </description>
+    </item>
+    
+    <item>
+      <title>RRG</title>
+      <link>https://newmapsplus.github.io/examples/rrg/</link>
+      <pubDate>Wed, 19 May 2021 07:51:06 -0400</pubDate>
+      
+      <guid>https://newmapsplus.github.io/examples/rrg/</guid>
+      <description> Map Information     Map notes   This digital elevation model (DEM) shaded relief map of Powell, Wolfe, and Menifee counties, Kentucky was created in the Blender 3D modeling application using lidar data from KyFromAbove.
+ Department of Geography
+New Maps Plus
+University of Kentucky
+Lexington, Kentucky   </description>
+    </item>
+    
     <item>
       <title>DEM &#43; Topo</title>
       <link>https://newmapsplus.github.io/examples/hill-topo/</link>
@@ -56,7 +82,7 @@ Lexington, Kentucky    </description>
  Department of Geography
 New Maps Plus
 University of Kentucky
-Lexington, Kentucky    </description>
+Lexington, Kentucky   </description>
     </item>
     
     <item>

@@ -1,5 +1,5 @@
 /*!
-  * Bootstrap v5.0.0-beta3 (https://getbootstrap.com/)
+  * Bootstrap v5.0.0 (https://getbootstrap.com/)
   * Copyright 2011-2021 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
@@ -33,7 +33,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): util/index.js
+   * Bootstrap (v5.0.0): util/index.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -266,7 +266,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/data.js
+   * Bootstrap (v5.0.0): dom/data.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -320,7 +320,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/event-handler.js
+   * Bootstrap (v5.0.0): dom/event-handler.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -609,7 +609,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): base-component.js
+   * Bootstrap (v5.0.0): base-component.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -619,7 +619,7 @@
    * ------------------------------------------------------------------------
    */
 
-  const VERSION = '5.0.0-beta3';
+  const VERSION = '5.0.0';
 
   class BaseComponent {
     constructor(element) {
@@ -653,7 +653,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): alert.js
+   * Bootstrap (v5.0.0): alert.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -775,7 +775,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): button.js
+   * Bootstrap (v5.0.0): button.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -855,7 +855,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/manipulator.js
+   * Bootstrap (v5.0.0): dom/manipulator.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -929,7 +929,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dom/selector-engine.js
+   * Bootstrap (v5.0.0): dom/selector-engine.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1000,7 +1000,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): carousel.js
+   * Bootstrap (v5.0.0): carousel.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1572,7 +1572,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): collapse.js
+   * Bootstrap (v5.0.0): collapse.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1945,7 +1945,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): dropdown.js
+   * Bootstrap (v5.0.0): dropdown.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -1995,14 +1995,16 @@
     boundary: 'clippingParents',
     reference: 'toggle',
     display: 'dynamic',
-    popperConfig: null
+    popperConfig: null,
+    autoClose: true
   };
   const DefaultType$7 = {
     offset: '(array|string|function)',
     boundary: '(string|element)',
     reference: '(string|element|object)',
     display: 'string',
-    popperConfig: '(null|object|function)'
+    popperConfig: '(null|object|function)',
+    autoClose: '(boolean|string)'
   };
   /**
    * ------------------------------------------------------------------------
@@ -2042,9 +2044,8 @@
 
       const isActive = this._element.classList.contains(CLASS_NAME_SHOW$7);
 
-      Dropdown.clearMenus();
-
       if (isActive) {
+        this.hide();
         return;
       }
 
@@ -2336,7 +2337,7 @@
       for (let i = 0, len = toggles.length; i < len; i++) {
         const context = Data.get(toggles[i], DATA_KEY$7);
 
-        if (!context) {
+        if (!context || context._config.autoClose === false) {
           continue;
         }
 
@@ -2349,8 +2350,10 @@
         };
 
         if (event) {
-          // Don't close the menu if the clicked element or one of its parents is the dropdown button
-          if ([context._element].some(element => event.composedPath().includes(element))) {
+          const composedPath = event.composedPath();
+          const isMenuTarget = composedPath.includes(context._menu);
+
+          if (composedPath.includes(context._element) || context._config.autoClose === 'inside' && !isMenuTarget || context._config.autoClose === 'outside' && isMenuTarget) {
             continue;
           } // Tab navigation through the dropdown menu shouldn't close the menu
 
@@ -2445,7 +2448,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): util/scrollBar.js
+   * Bootstrap (v5.0.0): util/scrollBar.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -2459,13 +2462,25 @@
   };
 
   const hide = (width = getWidth()) => {
-    document.body.style.overflow = 'hidden'; // trick: We adjust positive paddingRight and negative marginRight to sticky-top elements, to keep shown fullwidth
+    _disableOverFlow(); // give padding to element to balances the hidden scrollbar width
+
+
+    _setElementAttributes('body', 'paddingRight', calculatedValue => calculatedValue + width); // trick: We adjust positive paddingRight and negative marginRight to sticky-top elements, to keep shown fullwidth
+
 
     _setElementAttributes(SELECTOR_FIXED_CONTENT, 'paddingRight', calculatedValue => calculatedValue + width);
 
     _setElementAttributes(SELECTOR_STICKY_CONTENT, 'marginRight', calculatedValue => calculatedValue - width);
+  };
 
-    _setElementAttributes('body', 'paddingRight', calculatedValue => calculatedValue + width);
+  const _disableOverFlow = () => {
+    const actualValue = document.body.style.overflow;
+
+    if (actualValue) {
+      Manipulator.setDataAttribute(document.body, 'overflow', actualValue);
+    }
+
+    document.body.style.overflow = 'hidden';
   };
 
   const _setElementAttributes = (selector, styleProp, callback) => {
@@ -2483,13 +2498,13 @@
   };
 
   const reset = () => {
-    document.body.style.overflow = 'auto';
+    _resetElementAttributes('body', 'overflow');
+
+    _resetElementAttributes('body', 'paddingRight');
 
     _resetElementAttributes(SELECTOR_FIXED_CONTENT, 'paddingRight');
 
     _resetElementAttributes(SELECTOR_STICKY_CONTENT, 'marginRight');
-
-    _resetElementAttributes('body', 'paddingRight');
   };
 
   const _resetElementAttributes = (selector, styleProp) => {
@@ -2507,7 +2522,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): util/backdrop.js
+   * Bootstrap (v5.0.0): util/backdrop.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -2635,7 +2650,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): modal.js
+   * Bootstrap (v5.0.0): modal.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -3081,7 +3096,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): offcanvas.js
+   * Bootstrap (v5.0.0): offcanvas.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -3169,6 +3184,8 @@
 
       if (!this._config.scroll) {
         hide();
+
+        this._enforceFocusOnElement(this._element);
       }
 
       this._element.removeAttribute('aria-hidden');
@@ -3183,8 +3200,6 @@
         EventHandler.trigger(this._element, EVENT_SHOWN$2, {
           relatedTarget
         });
-
-        this._enforceFocusOnElement(this._element);
       };
 
       const transitionDuration = getTransitionDurationFromElement(this._element);
@@ -3347,7 +3362,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): util/sanitizer.js
+   * Bootstrap (v5.0.0): util/sanitizer.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -3460,7 +3475,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): tooltip.js
+   * Bootstrap (v5.0.0): tooltip.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4200,7 +4215,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): popover.js
+   * Bootstrap (v5.0.0): popover.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4350,7 +4365,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): scrollspy.js
+   * Bootstrap (v5.0.0): scrollspy.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4608,7 +4623,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): tab.js
+   * Bootstrap (v5.0.0): tab.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4652,7 +4667,7 @@
 
 
     show() {
-      if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && this._element.classList.contains(CLASS_NAME_ACTIVE) || isDisabled(this._element)) {
+      if (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && this._element.classList.contains(CLASS_NAME_ACTIVE)) {
         return;
       }
 
@@ -4740,7 +4755,13 @@
         element.classList.add(CLASS_NAME_SHOW$1);
       }
 
-      if (element.parentNode && element.parentNode.classList.contains(CLASS_NAME_DROPDOWN_MENU)) {
+      let parent = element.parentNode;
+
+      if (parent && parent.nodeName === 'LI') {
+        parent = parent.parentNode;
+      }
+
+      if (parent && parent.classList.contains(CLASS_NAME_DROPDOWN_MENU)) {
         const dropdownElement = element.closest(SELECTOR_DROPDOWN);
 
         if (dropdownElement) {
@@ -4779,7 +4800,14 @@
 
 
   EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function (event) {
-    event.preventDefault();
+    if (['A', 'AREA'].includes(this.tagName)) {
+      event.preventDefault();
+    }
+
+    if (isDisabled(this)) {
+      return;
+    }
+
     const data = Data.get(this, DATA_KEY$1) || new Tab(this);
     data.show();
   });
@@ -4794,7 +4822,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): toast.js
+   * Bootstrap (v5.0.0): toast.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
@@ -4990,7 +5018,7 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap (v5.0.0-beta3): index.umd.js
+   * Bootstrap (v5.0.0): index.umd.js
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */

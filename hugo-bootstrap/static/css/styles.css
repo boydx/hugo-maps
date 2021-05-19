@@ -92,3 +92,8 @@ body{
   top: 12px;
   right: 12px;
 }
+
+.fixImg img {
+  width: 102%;
+  height: 102%;
+}
