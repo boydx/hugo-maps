@@ -93,7 +93,7 @@ const basemaps = {
         url: 'https://nyc3.digitaloceanspaces.com/astoria/tiles/rrg/{z}/{x}/{y}.jpg',
         options: {
             attribution: '&copy; UKy Geography',
-            maxZoom: 18.4,
+            maxZoom: 19.4,
             minZoom: 10,
             bounds: [
                 [37.90274153, -83.73821562],
