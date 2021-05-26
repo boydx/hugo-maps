@@ -23,6 +23,19 @@ const basemaps = {
             ]
         }
     },
+    'st-trail': {
+        url: 'https://nyc3.digitaloceanspaces.com/astoria/tiles/st-trail/{z}/{x}/{y}.png',
+        // url: 'https://nyc3.digitaloceanspaces.com/astoria/tiles/ky_pop_density_2010/{z}/{x}/{y}.jpg',
+        options: {
+            attribution: '&copy; UKy Geography',
+            maxZoom: 14.4,
+            minZoom: 2,
+            bounds: [
+                [39.25995919, -89.80883737],
+                [36.09998597, -81.77646750]
+            ]
+        }
+    },
     dsm: {
         url: 'https://nyc3.digitaloceanspaces.com/astoria/tiles/dsm-lex-png/{z}/{x}/{y}.png',
         options: {
@@ -247,6 +260,9 @@ function makeMap(id) {
             .addTo(map)
             map.fitBounds(basemaps.kyBounds)
     };
+
+        L.tileLayer(basemaps['st-trail'].url, basemaps['st-trail'].options)
+            .addTo(map)
 
     map.on('zoom', () => {
         zoom = map.getZoom()
